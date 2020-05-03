@@ -10,8 +10,8 @@ const ApiClient = {
         }
         return {
             type: ActionType.GET_ALL_ITEMS, value: setTimeout(
-                fetch(`http://hn.algolia.com/api/v1/search?query=${query}&page=${nextPage ? nextPage : 0}`/*&hitsPerPage=${nextBatch ? nextBatch : 20}`*/, {
-                    method: HttpMethod.GET,
+                fetch(`https://hn.algolia.com/api/v1/search?query=${query}&page=${nextPage ? nextPage : 0}`/*&hitsPerPage=${nextBatch ? nextBatch : 20}`*/, {
+                    method: HttpMethod.GET
                 }).then((response) => response.json()
                 ).then((data) => {
                     if (nextPage) {
