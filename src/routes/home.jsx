@@ -9,10 +9,10 @@ class Home extends React.Component {
     }
 
     render() {
-        return (<Container>
+        return (<div className={'MuiContainer-root'}>
             <SearchHeader />
             <SearchResult />
-        </Container>)
+        </div>)
     }
 }
 
