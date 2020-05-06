@@ -11,15 +11,15 @@ class SearchHeader extends React.Component {
     render() {
         return (< >
             <header className="fixed ">
-                <nav className="navbar navbar-light header">
+                <nav className="SearchHeader_search">
                     <a className="Search-Header-Icon">
-                        <img className="header-img mx-2" alt={''} src={image} />
+                        <img className="header-img" alt={''} src={image} />
                         <div className="Search-Header-Label">Search <br /> Hacker News</div>
                     </a>
                     <Search searchType={this.props.searchMode} />
                 </nav>
             </header>
-        </>)
+        </ >)
     }
 }
 

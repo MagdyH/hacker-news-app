@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Result component should render snapshot 1`] = `
+<section
+  className="Search-Results"
+>
+  <div
+    className="infinite-scroll-component__outerdiv"
+    style={Object {}}
+  >
+    <div
+      className="infinite-scroll-component "
+      style={
+        Object {
+          "WebkitOverflowScrolling": "touch",
+          "height": "auto",
+          "overflow": "auto",
+        }
+      }
+    >
+      <div
+        className="loader"
+      >
+        Loading ...
+      </div>
+    </div>
+  </div>
+</section>
+`;

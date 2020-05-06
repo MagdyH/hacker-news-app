@@ -87,7 +87,7 @@ class SearchResult extends React.Component {
             <section className="Search-Results">
 
                 <InfiniteScroll
-                    dataLength={itemsCount}
+                    dataLength={itemsCount ? itemsCount : 20}
                     next={this.loadFunc}
                     hasMore={true}
                     loader={<div className="loader" key={0}>Loading ...</div>}
@@ -102,11 +102,11 @@ class SearchResult extends React.Component {
 
 function mapStateToProps({ searchReducer }) {
     return {
-        searchQuery: searchReducer.searchQuery,
-        items: searchReducer.stories,
-        pageNum: searchReducer.pageNum,
-        itemsCount: searchReducer.storiesLength,
-        page: searchReducer.page
+        searchQuery: searchReducer?.searchQuery,
+        items: searchReducer?.stories,
+        pageNum: searchReducer?.pageNum,
+        itemsCount: searchReducer?.storiesLength,
+        page: searchReducer?.page
     }
 }
 

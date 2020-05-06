@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Header component should render snapshot 1`] = `
+<header
+  className="fixed "
+>
+  <nav
+    className="SearchHeader_search"
+  >
+    <a
+      className="Search-Header-Icon"
+    >
+      <img
+        alt=""
+        className="header-img"
+        src="logo-hn-search-a822432b.webp"
+      />
+      <div
+        className="Search-Header-Label"
+      >
+        Search 
+        <br />
+         Hacker News
+      </div>
+    </a>
+    <div
+      className="Search-container"
+    >
+      <span
+        className="Search-Icon"
+      >
+        <i
+          aria-hidden="true"
+          className="fa fa-search"
+        />
+      </span>
+      <input
+        aria-label="Search"
+        className="Search-Input"
+        onChange={[Function]}
+        placeholder="Search stories by title, url or author"
+        type="text"
+      />
+    </div>
+  </nav>
+</header>
+`;
